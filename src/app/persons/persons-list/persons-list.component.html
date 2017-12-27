@@ -1,0 +1,9 @@
+<h1>Persons</h1>
+ 
+<div *ngFor="let person of persons | async" style="width: 300px;">
+	<person-details [person]='person'></person-details>
+</div>
+ 
+<div>
+	<button type="button" class="button btn-danger" (click)='deletePersons()'>Delete All</button>
+</div>

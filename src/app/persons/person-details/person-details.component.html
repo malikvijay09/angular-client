@@ -1,0 +1,21 @@
+<div *ngIf="person">
+	<div>
+		<label>First Name:</label>{{person.firstName}}
+	</div>
+	<div>
+		<label>Last Name:</label>{{person.lastName}}
+	</div>
+	<div>
+		<label>Age:</label>{{person.age}}
+	</div>
+	<div>
+		<label>Active:</label>{{person.active}}
+	</div>
+	
+	<span class="button is-small btn-primary" *ngIf='person.active' (click)='updateActive(false)'>Inactive</span>
+ 
+	<span class="button is-small btn-primary" *ngIf='person.active' (click)='updateActive(true)'>Active</span>
+ 
+	<span class="button is-small btn-danger" (click)='deletePerson()'>Delete</span>
+
+</div>
