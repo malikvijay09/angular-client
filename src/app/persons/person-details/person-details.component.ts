@@ -5,7 +5,7 @@ import { Person } from '../person';
 
 import { PersonsListComponent } from '../persons-list/persons-list.component';
 @Component({
-  selector: 'app-person-details',
+  selector: 'person-details',
   templateUrl: './person-details.component.html',
   styleUrls: ['./person-details.component.css']
 })

@@ -1,16 +1,16 @@
-<h3>Create Customer</h3>
+<h3>Create Person</h3>
 <div [hidden]="submitted" style="width: 300px;">
 	<form (ngSubmit)="onSubmit()">
 		<div class="form-group">
 			<label for="firstName"> First Name</label> <input type="text"
 				class="form-control" id="firstName" required [(ngModel)]="person.firstName"
-				name="name">
+				name="fname">
 		</div>
 		
 		<div class="form-group">
 			<label for="firstName"> Last Name</label> <input type="text"
 				class="form-control" id="lastName" required [(ngModel)]="person.lastName"
-				name="name">
+				name="lname">
 		</div>
  
 		<div class="form-group">

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 
@@ -18,6 +19,7 @@ import { PersonService } from './persons/person.service';
     PersonsListComponent,
     PersonDetailsComponent,
     CreatePersonComponent
+
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@
 	
 	<span class="button is-small btn-primary" *ngIf='person.active' (click)='updateActive(false)'>Inactive</span>
  
-	<span class="button is-small btn-primary" *ngIf='person.active' (click)='updateActive(true)'>Active</span>
+	<span class="button is-small btn-primary" *ngIf='!person.active' (click)='updateActive(true)'>Active</span>
  
 	<span class="button is-small btn-danger" (click)='deletePerson()'>Delete</span>
 
