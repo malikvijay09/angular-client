@@ -27,10 +27,10 @@ export class PersonService {
   }
 
   getPersonsList(query = {}): Observable<any> {
-    return this.http.get(`${this.baseUrl}`);
+    return this.http.get(this.baseUrl);
   }
 
   deleteAll(): Observable<any> {
-    return this.http.delete(`${this.baseUrl}`);
+    return this.http.delete(this.baseUrl);
   }
 }

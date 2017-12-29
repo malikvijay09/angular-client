@@ -20,7 +20,7 @@ export class PersonDetailsComponent implements OnInit {
   updateActive(isActive: boolean) {
     this.personService.updatePerson(this.person.id,
     { firstName: this.person.firstName, lastName: this.person.lastName,
-      age: this.person.age, active: this.person.active})
+      age: this.person.age, active: isActive})
     .subscribe(
     data => {
       console.log(data);
